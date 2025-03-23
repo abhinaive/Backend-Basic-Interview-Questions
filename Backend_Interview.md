@@ -75,13 +75,14 @@ A message sent by a client (such as a web browser) to a server to request specif
 - 2nd line - Meta info about the request
 - 3rd line - Body (Data to be sent with the request)
 
-- `GET /index.html HTTP/1.1`1     
-- `Host           : www.example.com`                         
-- `User-Agent     : Mozilla/5.0 (Windows NT 10.0; Win64; x64)`
+```java
+- GET /index.html HTTP/1.1`1     
+- Host           : www.example.com`                         
+- User-Agent     : Mozilla/5.0 (Windows NT 10.0; Win64; x64)`
 - Accept-Language: en-US,en;q=0.5                           
 - Accept-Encoding: gzip, deflate                     
 - Connection     : keep-alive                              
-
+```
 
 - **HTTP Response consists of:-**
 
