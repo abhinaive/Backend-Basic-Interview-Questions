@@ -77,10 +77,10 @@ A message sent by a client (such as a web browser) to a server to request specif
 
 ```java
 - GET /index.html HTTP/1.1`1     
-- Host           : www.example.com`                         
-- User-Agent     : Mozilla/5.0 (Windows NT 10.0; Win64; x64)`
-- Accept-Language: en-US,en;q=0.5                           
-- Accept-Encoding: gzip, deflate                     
+- Host           : www.example.com`                            -------> Headers               
+- User-Agent     : Mozilla/5.0 (Windows NT 10.0; Win64; x64)`  -------> Headers
+- Accept-Language: en-US,en;q=0.5                              -------> Headers
+- Accept-Encoding: gzip, deflate                               -------> Headers
 - Connection     : keep-alive                              
 ```
 
@@ -90,6 +90,7 @@ A message sent by a client (such as a web browser) to a server to request specif
 - Headers    : Meta information about the response
 - Body       : Actual Data being sent. 
 
+```java
 - HTTP/1.1 200 OK
 - Date   : Mon, 01 Feb 2023 12:00:00:00 GMT      ----> headers
 - Server : Apache/2.4.46 (Ubuntu)                ----> headers
@@ -105,7 +106,7 @@ A message sent by a client (such as a web browser) to a server to request specif
      <body>
      </body>
 </html>
-
+```
 
 ### Http is a stateless protocol
 
