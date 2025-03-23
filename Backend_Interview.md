@@ -75,12 +75,14 @@ A message sent by a client (such as a web browser) to a server to request specif
 - 2nd line - Meta info about the request
 - 3rd line - Body (Data to be sent with the request)
 
-GET /index.html HTTP/1.1      
-Host           : www.example.com                          -----------> Headers
-User-Agent     : Mozilla/5.0 (Windows NT 10.0; Win64; x64)-----------> Headers
-Accept-Language: en-US,en;q=0.5                           -----------> Headers
-Accept-Encoding: gzip, deflate                            -----------> Headers
-Connection     : keep-alive                               -----------> Headers
+
+- GET /index.html HTTP/1.1      
+- Host           : www.example.com                          -----------> Headers
+- User-Agent     : Mozilla/5.0 (Windows NT 10.0; Win64; x64)-----------> Headers
+- Accept-Language: en-US,en;q=0.5                           -----------> Headers
+- Accept-Encoding: gzip, deflate                            -----------> Headers
+- Connection     : keep-alive                               -----------> Headers
+
 
 - **HTTP Response consists of:-**
 
@@ -88,13 +90,13 @@ Connection     : keep-alive                               -----------> Headers
 - Headers    : Meta information about the response
 - Body       : Actual Data being sent. 
 
-HTTP/1.1 200 OK
-Date   : Mon, 01 Feb 2023 12:00:00:00 GMT      ----> headers
-Server : Apache/2.4.46 (Ubuntu)                ----> headers
-Last-Modified : Mon, 01 Jan 2023 12:00:00 GMT  ----> headers
-Content-Type :  text/html; charset=UTF-8
-Content-Length: 57
-Connection: keep-alive
+- HTTP/1.1 200 OK
+- Date   : Mon, 01 Feb 2023 12:00:00:00 GMT      ----> headers
+- Server : Apache/2.4.46 (Ubuntu)                ----> headers
+- Last-Modified : Mon, 01 Jan 2023 12:00:00 GMT  ----> headers
+- Content-Type :  text/html; charset=UTF-8
+- Content-Length: 57
+- Connection: keep-alive
 
 <html>
    <head>
